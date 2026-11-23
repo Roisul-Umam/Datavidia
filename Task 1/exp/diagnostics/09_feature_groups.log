@@ -1,0 +1,17 @@
+base=374 hist=57 cx=15 load=10
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+A base {"iters": 200, "logloss": 0.78693, "f1_argmax": 0.61442, "f1_crossfit": 0.62108, "f1_mirip_test": 0.61765, "per_kelas": {"normal": 0.82, "konfir": 0.686, "tertun": 0.778, "gagal_": 0.506, "retur_": 0.469, "rusak_": 0.578, "klaim_": 0.509}, "menit": 3.5}
+   porsi gain: {'hist_': np.float64(0.0), 'cx_': np.float64(0.0), 'load_': np.float64(0.0), 'cs_': np.float64(19.9), 'te_': np.float64(19.5)} | teratas: ['address_quality', 'addr_x_complaint', 'te_cr_tertun', 'te_cr_normal', 'complaint_index', 'cs_loo_sc_n_upaya_antar', 'credit_score', 'cr_sc_lgap_mean', 'cr_sc_q_mean', 'cr_rt_lratio_mean', 'te_cr_gagal_', 'cs_mean_inv_dtp15_n', 'cs_mean_sc_n_upaya_antar', 'sc_q_mean']
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+B base+hist {"iters": 200, "logloss": 0.7871, "f1_argmax": 0.61586, "f1_crossfit": 0.62092, "f1_mirip_test": 0.61954, "per_kelas": {"normal": 0.821, "konfir": 0.688, "tertun": 0.776, "gagal_": 0.501, "retur_": 0.472, "rusak_": 0.578, "klaim_": 0.51}, "menit": 3.9}
+   porsi gain: {'hist_': np.float64(2.5), 'cx_': np.float64(0.0), 'load_': np.float64(0.0), 'cs_': np.float64(17.6), 'te_': np.float64(16.7)} | teratas: ['address_quality', 'addr_x_complaint', 'cr_sc_lgap_mean', 'te_cr_normal', 'credit_score', 'cs_loo_sc_n_upaya_antar', 'cr_rt_lratio_mean', 'cr_sc_q_mean', 'te_cr_tertun', 'complaint_index', 'te_cr_gagal_', 'cs_mean_inv_dtp15_n', 'declared_value', 'sc_q_mean']
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+C base+hist+load {"iters": 213, "logloss": 0.78679, "f1_argmax": 0.61529, "f1_crossfit": 0.62176, "f1_mirip_test": 0.6188, "per_kelas": {"normal": 0.82, "konfir": 0.683, "tertun": 0.775, "gagal_": 0.506, "retur_": 0.474, "rusak_": 0.58, "klaim_": 0.513}, "menit": 4.2}
+   porsi gain: {'hist_': np.float64(2.4), 'cx_': np.float64(0.0), 'load_': np.float64(0.4), 'cs_': np.float64(18.3), 'te_': np.float64(16.8)} | teratas: ['address_quality', 'addr_x_complaint', 'cr_sc_lgap_mean', 'te_cr_normal', 'complaint_index', 'cs_loo_sc_n_upaya_antar', 'credit_score', 'cr_sc_q_mean', 'te_cr_tertun', 'cr_rt_lratio_mean', 'te_cr_gagal_', 'cs_mean_inv_dtp15_n', 'addr_x_notes', 'cs_mean_inv_n']
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+D base+hist+cx {"iters": 203, "logloss": 0.78494, "f1_argmax": 0.6156, "f1_crossfit": 0.62206, "f1_mirip_test": 0.62088, "per_kelas": {"normal": 0.821, "konfir": 0.69, "tertun": 0.775, "gagal_": 0.495, "retur_": 0.481, "rusak_": 0.58, "klaim_": 0.513}, "menit": 4.1}
+   porsi gain: {'hist_': np.float64(3.2), 'cx_': np.float64(0.6), 'load_': np.float64(0.0), 'cs_': np.float64(17.5), 'te_': np.float64(20.2)} | teratas: ['address_quality', 'addr_x_complaint', 'te_cr_tertun', 'te_cr_normal', 'complaint_index', 'cr_sc_lgap_mean', 'cr_sc_q_mean', 'credit_score', 'cs_loo_sc_n_upaya_antar', 'cr_rt_lratio_mean', 'te_cr_gagal_', 'addr_x_notes', 'te_hb_klaim_', 'hist_sc_n_upaya_antar']

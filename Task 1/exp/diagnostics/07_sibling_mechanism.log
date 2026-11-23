@@ -1,0 +1,73 @@
+E:\Kuliyah\Datavidia\.venv\Lib\site-packages\numpy\lib\_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+E:\Kuliyah\Datavidia\.venv\Lib\site-packages\numpy\lib\_function_base_impl.py:3038: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+=== A. Peluang saudara memakai kurir / hub / bulan yang sama ===
+train-train pasangan=2697604  kurir_sama=0.0000  hub_sama=0.0016  bulan_sama=0.0855
+test-test pasangan=228224  kurir_sama=0.0000  hub_sama=0.0017  bulan_sama=0.0864
+test-train pasangan=785021  kurir_sama=0.0000  hub_sama=0.0016  bulan_sama=0.0858
+acuan acak: kurir 0.000042 | hub 0.001577
+
+=== B. Pasangan saudara (cs_n = 2): korelasi label baris dengan log saudara, menurut kurir sama/beda ===
+porsi pasangan kurir sama: 0.0
+shape: (14, 6)
+┌────────────┬────────┬────────────┬─────────────┬───────────┬───────────┐
+│ pasangan   ┆ n      ┆ kelas      ┆ log_saudara ┆ r_sendiri ┆ r_saudara │
+│ ---        ┆ ---    ┆ ---        ┆ ---         ┆ ---       ┆ ---       │
+│ str        ┆ i64    ┆ str        ┆ str         ┆ f64       ┆ f64       │
+╞════════════╪════════╪════════════╪═════════════╪═══════════╪═══════════╡
+│ kurir sama ┆ 14     ┆ rusak_perj ┆ q_b         ┆ -0.1781   ┆ -0.0946   │
+│ kurir sama ┆ 14     ┆ rusak_perj ┆ man_b       ┆ -0.2304   ┆ -0.2304   │
+│ kurir sama ┆ 14     ┆ gagal_anta ┆ up_b        ┆ -0.0192   ┆ -0.0192   │
+│ kurir sama ┆ 14     ┆ konfirmasi ┆ up_b        ┆ -0.1959   ┆ 0.5259    │
+│ kurir sama ┆ 14     ┆ retur_peng ┆ kl_b        ┆ -0.2132   ┆ 0.2843    │
+│ kurir sama ┆ 14     ┆ tertunda_o ┆ dtp_b       ┆ NaN       ┆ NaN       │
+│ kurir sama ┆ 14     ┆ tertunda_o ┆ lgap_b      ┆ NaN       ┆ NaN       │
+│ kurir beda ┆ 308786 ┆ rusak_perj ┆ q_b         ┆ -0.2157   ┆ -0.1712   │
+│ kurir beda ┆ 308786 ┆ rusak_perj ┆ man_b       ┆ 0.1172    ┆ 0.2455    │
+│ kurir beda ┆ 308786 ┆ gagal_anta ┆ up_b        ┆ 0.0220    ┆ 0.2299    │
+│ kurir beda ┆ 308786 ┆ konfirmasi ┆ up_b        ┆ 0.1683    ┆ 0.3282    │
+│ kurir beda ┆ 308786 ┆ retur_peng ┆ kl_b        ┆ 0.1614    ┆ 0.1606    │
+│ kurir beda ┆ 308786 ┆ tertunda_o ┆ dtp_b       ┆ 0.1404    ┆ 0.1408    │
+│ kurir beda ┆ 308786 ┆ tertunda_o ┆ lgap_b      ┆ 0.2791    ┆ -0.0017   │
+└────────────┴────────┴────────────┴─────────────┴───────────┴───────────┘
+
+=== C. Kesamaan label antar saudara: kurir sama vs beda ===
+shape: (2, 3)
+┌──────────────┬────────┬────────────┐
+│ same_courier ┆ n      ┆ label_sama │
+│ ---          ┆ ---    ┆ ---        │
+│ bool         ┆ u32    ┆ f64        │
+╞══════════════╪════════╪════════════╡
+│ false        ┆ 308786 ┆ 0.4217     │
+│ true         ┆ 14     ┆ 0.4286     │
+└──────────────┴────────┴────────────┘
+
+=== D. Rusak: rata-rata q dan manual baris ini menurut (label sendiri rusak?, label saudara rusak?) ===
+shape: (4, 7)
+┌─────────┬───────────┬────────┬───────────┬───────────┬─────────────┬─────────────┐
+│ y_rusak ┆ sib_rusak ┆ n      ┆ q_sendiri ┆ q_saudara ┆ man_sendiri ┆ man_saudara │
+│ ---     ┆ ---       ┆ ---    ┆ ---       ┆ ---       ┆ ---         ┆ ---         │
+│ bool    ┆ bool      ┆ u32    ┆ f32       ┆ f32       ┆ f32         ┆ f32         │
+╞═════════╪═══════════╪════════╪═══════════╪═══════════╪═════════════╪═════════════╡
+│ false   ┆ false     ┆ 275512 ┆ 3.6856    ┆ 3.6856    ┆ 0.1629      ┆ 0.1629      │
+│ false   ┆ true      ┆ 15040  ┆ 3.3192    ┆ 3.1978    ┆ 0.3522      ┆ 0.2355      │
+│ true    ┆ false     ┆ 15040  ┆ 3.1978    ┆ 3.3192    ┆ 0.2355      ┆ 0.3522      │
+│ true    ┆ true      ┆ 3208   ┆ 2.9325    ┆ 2.9325    ┆ 0.4093      ┆ 0.4093      │
+└─────────┴───────────┴────────┴───────────┴───────────┴─────────────┴─────────────┘
+
+=== E. Sidik jari log per kelas pada baris sendiri (cs_n = 1) ===
+shape: (7, 9)
+┌──────────────────────┬───────┬───────────┬─────────────┬──────────────┬──────────────────┬───────────────┬─────────────┬────────────────┐
+│ status_penanganan    ┆ n     ┆ sc_q_mean ┆ sc_man_rate ┆ sc_lgap_mean ┆ sc_n_upaya_antar ┆ inv_has_klaim ┆ inv_dtp_max ┆ rt_lratio_mean │
+│ ---                  ┆ ---   ┆ ---       ┆ ---         ┆ ---          ┆ ---              ┆ ---           ┆ ---         ┆ ---            │
+│ str                  ┆ u32   ┆ f32       ┆ f32         ┆ f32          ┆ f32              ┆ f32           ┆ f32         ┆ f32            │
+╞══════════════════════╪═══════╪═══════════╪═════════════╪══════════════╪══════════════════╪═══════════════╪═════════════╪════════════════╡
+│ normal               ┆ 55546 ┆ 3.7904    ┆ 0.1499      ┆ 1.8835       ┆ 1.3155           ┆ 0.1401        ┆ 3.8217      ┆ -0.0697        │
+│ konfirmasi_alamat    ┆ 30105 ┆ 3.6440    ┆ 0.1785      ┆ 1.9455       ┆ 1.8956           ┆ 0.1238        ┆ 4.3787      ┆ -0.0192        │
+│ tertunda_operasional ┆ 21573 ┆ 3.5814    ┆ 0.1897      ┆ 2.2210       ┆ 1.3981           ┆ 0.1436        ┆ 6.1541      ┆ 0.1875         │
+│ gagal_antar_awal     ┆ 14345 ┆ 3.3926    ┆ 0.2221      ┆ 1.9299       ┆ 1.5916           ┆ 0.0955        ┆ 4.4746      ┆ -0.0275        │
+│ retur_pengirim       ┆ 10698 ┆ 3.5965    ┆ 0.1874      ┆ 1.9527       ┆ 1.5365           ┆ 0.6515        ┆ 5.3861      ┆ -0.0119        │
+│ rusak_perjalanan     ┆ 5891  ┆ 3.0367    ┆ 0.2885      ┆ 1.9281       ┆ 1.2976           ┆ 0.1159        ┆ 4.5293      ┆ -0.0335        │
+│ klaim_hilang         ┆ 4322  ┆ 3.6280    ┆ 0.1829      ┆ 1.9330       ┆ 1.3778           ┆ 0.5275        ┆ 5.1404      ┆ -0.0241        │
+└──────────────────────┴───────┴───────────┴─────────────┴──────────────┴──────────────────┴───────────────┴─────────────┴────────────────┘

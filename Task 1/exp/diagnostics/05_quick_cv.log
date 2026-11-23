@@ -1,0 +1,21 @@
+sebaran cs_n (baris) train: [0.115 0.248 0.268 0.194 0.106 0.069]
+sebaran cs_n (baris) test : [0.533 0.335 0.106 0.022 0.003 0.001]
+fitur baris=242 | fitur pelanggan per split=132
+target encoding kurir/hub selesai
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+[100]	valid_0's multi_logloss: 0.855168
+[200]	valid_0's multi_logloss: 0.851723
+baris {"iters": 183, "logloss": 0.85162, "f1_argmax": 0.57006, "f1_crossfit": 0.57945, "f1_mirip_test": 0.59183, "per_kelas": {"normal": 0.811, "konfir": 0.662, "tertun": 0.74, "gagal_": 0.48, "retur_": 0.411, "rusak_": 0.485, "klaim_": 0.466}, "menit": 2.2}
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+[100]	valid_0's multi_logloss: 0.79054
+[200]	valid_0's multi_logloss: 0.787079
+baris+pelanggan {"iters": 189, "logloss": 0.78703, "f1_argmax": 0.61489, "f1_crossfit": 0.62241, "f1_mirip_test": 0.61931, "per_kelas": {"normal": 0.821, "konfir": 0.691, "tertun": 0.775, "gagal_": 0.502, "retur_": 0.476, "rusak_": 0.577, "klaim_": 0.515}, "menit": 3.3}
+fitur teratas: [('address_quality', np.float64(12.6)), ('addr_x_complaint', np.float64(7.0)), ('te_cr_tertun', np.float64(6.5)), ('te_cr_normal', np.float64(5.2)), ('complaint_index', np.float64(4.9)), ('cs_loo_sc_n_upaya_antar', np.float64(4.4)), ('cr_sc_lgap_mean', np.float64(4.2)), ('credit_score', np.float64(4.0)), ('te_cr_gagal_', np.float64(2.9)), ('cr_sc_q_min', np.float64(2.5)), ('cr_sc_q_mean', np.float64(2.2)), ('cs_mean_inv_dtp15_n', np.float64(2.2)), ('cr_rt_lratio_mean', np.float64(2.0)), ('sc_q_mean', np.float64(1.5)), ('declared_value', np.float64(1.4)), ('cs_mean_sc_n_upaya_antar', np.float64(1.3)), ('te_hb_klaim_', np.float64(1.3)), ('cs_loo_sc_man_n', np.float64(1.3)), ('value_x_lowauto', np.float64(1.2)), ('cs_mean_inv_n', np.float64(1.1)), ('distance_km', np.float64(1.1)), ('peak_x_density', np.float64(0.9)), ('addr_x_notes', np.float64(0.8)), ('te_hm_normal', np.float64(0.8)), ('te_hb_normal', np.float64(0.8)), ('cs_mean_jumlah_catatan', np.float64(0.8)), ('cr_sc_gap_sum', np.float64(0.7)), ('is_peak_month', np.float64(0.7)), ('rt_dur_sum', np.float64(0.7)), ('hm_lratio', np.float64(0.7)), ('cs_mean_inv_dtp_max', np.float64(0.7)), ('te_cr_rusak_', np.float64(0.7)), ('cs_mean_inv_has_klaim', np.float64(0.6)), ('cs_mean_sc_q_mean', np.float64(0.6)), ('cs_max_inv_dtp_max', np.float64(0.5)), ('cr_rt_lratio_max', np.float64(0.5)), ('log_value', np.float64(0.5)), ('is_night', np.float64(0.4)), ('cs_loo_sc_UU', np.float64(0.4)), ('cs_loo_jumlah_catatan', np.float64(0.4))]
+  cs_n=1: baris= 28607  F1 argmax=0.6037
+  cs_n=2: baris= 61446  F1 argmax=0.6275
+  cs_n=3: baris= 66666  F1 argmax=0.6157
+  cs_n=4: baris= 48604  F1 argmax=0.6134
+  cs_n=5: baris= 26190  F1 argmax=0.5934
+  cs_n=6: baris= 17078  F1 argmax=0.6067

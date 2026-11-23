@@ -1,0 +1,75 @@
+customer_id: m=1, baris uji=192931
+courier_id: m=10, baris uji=583293
+hub_id: m=200, baris uji=622182
+
+=== customer: pasangan terkuat ===
+shape: (14, 5)
+┌──────────────┬──────────────────┬───────────────┬────────────────┬────────────────┐
+│ kelas        ┆ sinyal           ┆ r_dalam_split ┆ r_lintas_split ┆ rasio_bertahan │
+│ ---          ┆ ---              ┆ ---           ┆ ---            ┆ ---            │
+│ str          ┆ str              ┆ f64           ┆ f64            ┆ f64            │
+╞══════════════╪══════════════════╪═══════════════╪════════════════╪════════════════╡
+│ konfirmasi_a ┆ sc_n_upaya_antar ┆ 0.2463        ┆ 0.1514         ┆ 0.6150         │
+│ konfirmasi_a ┆ jumlah_catatan   ┆ 0.2439        ┆ 0.2423         ┆ 0.9935         │
+│ gagal_antar_ ┆ sc_n_upaya_antar ┆ 0.1263        ┆ 0.0181         ┆ 0.1429         │
+│ rusak_perjal ┆ sc_man_rate      ┆ 0.1125        ┆ -0.0012        ┆ -0.0106        │
+│ tertunda_ope ┆ inv_dtp_max      ┆ 0.1121        ┆ 0.0613         ┆ 0.5472         │
+│ retur_pengir ┆ inv_has_klaim    ┆ 0.0972        ┆ 0.0037         ┆ 0.0385         │
+│ rusak_perjal ┆ sc_q_mean        ┆ -0.0778       ┆ 0.0017         ┆ -0.0221        │
+│ tertunda_ope ┆ sc_n_upaya_antar ┆ -0.0695       ┆ -0.0293        ┆ 0.4220         │
+│ retur_pengir ┆ sc_n_upaya_antar ┆ -0.0552       ┆ 0.0017         ┆ -0.0312        │
+│ rusak_perjal ┆ sc_n_upaya_antar ┆ -0.0482       ┆ -0.0276        ┆ 0.5725         │
+│ klaim_hilang ┆ inv_has_klaim    ┆ 0.0470        ┆ -0.0045        ┆ -0.0959        │
+│ tertunda_ope ┆ jumlah_catatan   ┆ -0.0464       ┆ -0.0466        ┆ 1.0037         │
+│ retur_pengir ┆ inv_dtp_max      ┆ 0.0463        ┆ 0.0338         ┆ 0.7292         │
+│ klaim_hilang ┆ sc_n_upaya_antar ┆ -0.0412       ┆ -0.0200        ┆ 0.4858         │
+└──────────────┴──────────────────┴───────────────┴────────────────┴────────────────┘
+ringkasan customer: pasangan=16, rata-rata |r| dalam=0.0901, lintas=0.0445
+
+=== courier: pasangan terkuat ===
+shape: (14, 5)
+┌──────────────┬────────────────┬───────────────┬────────────────┬────────────────┐
+│ kelas        ┆ sinyal         ┆ r_dalam_split ┆ r_lintas_split ┆ rasio_bertahan │
+│ ---          ┆ ---            ┆ ---           ┆ ---            ┆ ---            │
+│ str          ┆ str            ┆ f64           ┆ f64            ┆ f64            │
+╞══════════════╪════════════════╪═══════════════╪════════════════╪════════════════╡
+│ tertunda_ope ┆ sc_lgap_mean   ┆ 0.4453        ┆ 0.4343         ┆ 0.9755         │
+│ tertunda_ope ┆ rt_lratio_mean ┆ 0.4267        ┆ 0.4259         ┆ 0.9981         │
+│ gagal_antar_ ┆ sc_q_mean      ┆ -0.2641       ┆ -0.2605        ┆ 0.9865         │
+│ gagal_antar_ ┆ sc_man_rate    ┆ 0.1999        ┆ 0.1999         ┆ 1.0000         │
+│ rusak_perjal ┆ sc_q_mean      ┆ -0.1954       ┆ -0.1942        ┆ 0.9939         │
+│ rusak_perjal ┆ sc_man_rate    ┆ 0.1477        ┆ 0.1484         ┆ 1.0047         │
+│ konfirmasi_a ┆ sc_q_mean      ┆ 0.0413        ┆ 0.0396         ┆ 0.9603         │
+│ gagal_antar_ ┆ sc_lgap_mean   ┆ -0.0364       ┆ -0.0387        ┆ 1.0621         │
+│ retur_pengir ┆ sc_q_mean      ┆ -0.0339       ┆ -0.0330        ┆ 0.9735         │
+│ rusak_perjal ┆ sc_lgap_mean   ┆ -0.0335       ┆ -0.0351        ┆ 1.0481         │
+│ konfirmasi_a ┆ sc_lgap_mean   ┆ -0.0325       ┆ -0.0313        ┆ 0.9622         │
+│ gagal_antar_ ┆ rt_lratio_mean ┆ -0.0316       ┆ -0.0332        ┆ 1.0484         │
+│ rusak_perjal ┆ rt_lratio_mean ┆ -0.0304       ┆ -0.0323        ┆ 1.0616         │
+│ konfirmasi_a ┆ sc_man_rate    ┆ -0.0292       ┆ -0.0283        ┆ 0.9702         │
+└──────────────┴────────────────┴───────────────┴────────────────┴────────────────┘
+ringkasan courier: pasangan=13, rata-rata |r| dalam=0.1476, lintas=0.1466
+
+=== hub: pasangan terkuat ===
+shape: (14, 5)
+┌──────────────┬──────────────────┬───────────────┬────────────────┬────────────────┐
+│ kelas        ┆ sinyal           ┆ r_dalam_split ┆ r_lintas_split ┆ rasio_bertahan │
+│ ---          ┆ ---              ┆ ---           ┆ ---            ┆ ---            │
+│ str          ┆ str              ┆ f64           ┆ f64            ┆ f64            │
+╞══════════════╪══════════════════╪═══════════════╪════════════════╪════════════════╡
+│ tertunda_ope ┆ sc_lgap_mean     ┆ 0.3905        ┆ 0.3927         ┆ 1.0056         │
+│ tertunda_ope ┆ rt_lratio_mean   ┆ 0.3757        ┆ 0.3761         ┆ 1.0011         │
+│ tertunda_ope ┆ sc_n_upaya_antar ┆ -0.0404       ┆ -0.0505        ┆ 1.2511         │
+│ gagal_antar_ ┆ sc_q_mean        ┆ -0.0389       ┆ -0.0357        ┆ 0.9183         │
+│ gagal_antar_ ┆ sc_lgap_mean     ┆ -0.0348       ┆ -0.0360        ┆ 1.0352         │
+│ rusak_perjal ┆ sc_lgap_mean     ┆ -0.0327       ┆ -0.0330        ┆ 1.0104         │
+│ gagal_antar_ ┆ sc_man_rate      ┆ 0.0307        ┆ 0.0277         ┆ 0.9008         │
+│ gagal_antar_ ┆ rt_lratio_mean   ┆ -0.0306       ┆ -0.0320        ┆ 1.0475         │
+│ rusak_perjal ┆ sc_q_mean        ┆ -0.0290       ┆ -0.0274        ┆ 0.9441         │
+│ rusak_perjal ┆ rt_lratio_mean   ┆ -0.0290       ┆ -0.0304        ┆ 1.0484         │
+│ konfirmasi_a ┆ sc_lgap_mean     ┆ -0.0274       ┆ -0.0287        ┆ 1.0458         │
+│ rusak_perjal ┆ sc_man_rate      ┆ 0.0229        ┆ 0.0201         ┆ 0.8777         │
+│ konfirmasi_a ┆ rt_lratio_mean   ┆ -0.0227       ┆ -0.0240        ┆ 1.0572         │
+│ klaim_hilang ┆ sc_lgap_mean     ┆ -0.0167       ┆ -0.0200        ┆ 1.1983         │
+└──────────────┴──────────────────┴───────────────┴────────────────┴────────────────┘
+ringkasan hub: pasangan=8, rata-rata |r| dalam=0.1218, lintas=0.1230

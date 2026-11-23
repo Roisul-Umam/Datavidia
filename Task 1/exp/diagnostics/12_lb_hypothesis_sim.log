@@ -1,0 +1,29 @@
+matriks siap (995026, 455) (9s)
+proksi full: iter=228 logloss=0.78358 (442s)
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+proksi row: iter=200 logloss=0.91550 (655s)
+
+=== Kalibrasi metode pada fold validasi (prediksi model lama sebagai pihak luar) ===
+F1 nyata 0.6172 | F1 harapan dari proksi penuh 0.5791
+F1 nyata argmax proksi 0.6171 | harapan 0.6245
+
+porsi baris test yang punya riwayat di train: 0.8858
+kecocokan kedua submission: 0.7783
+
+=== Skor harapan kedua submission menurut tiap hipotesis ===
+dalam_test             lama=0.5320 (nyata 0.59364)  sementara=0.6249 (nyata 0.48574)  galat=0.2008
+tanpa_riwayat          lama=0.5035 (nyata 0.59364)  sementara=0.5118 (nyata 0.48574)  galat=0.1162
+train+sendiri          lama=0.5819 (nyata 0.59364)  sementara=0.5155 (nyata 0.48574)  galat=0.0414
+train_saja_n=m         lama=0.5706 (nyata 0.59364)  sementara=0.4847 (nyata 0.48574)  galat=0.0240
+train_saja_n=m+1       lama=0.5708 (nyata 0.59364)  sementara=0.4849 (nyata 0.48574)  galat=0.0237
+train+test             lama=0.5901 (nyata 0.59364)  sementara=0.5511 (nyata 0.48574)  galat=0.0688
+
+peringkat hipotesis (galat terkecil lebih baik):
+{'hipotesis': 'train_saja_n=m+1', 'f1_lama': 0.5708, 'f1_sementara': 0.4849, 'galat_total': 0.0237, 'rerata_proba': [0.374, 0.221, 0.153, 0.102, 0.07, 0.051, 0.029]}
+{'hipotesis': 'train_saja_n=m', 'f1_lama': 0.5706, 'f1_sementara': 0.4847, 'galat_total': 0.024, 'rerata_proba': [0.374, 0.22, 0.153, 0.102, 0.07, 0.051, 0.029]}
+{'hipotesis': 'train+sendiri', 'f1_lama': 0.5819, 'f1_sementara': 0.5155, 'galat_total': 0.0414, 'rerata_proba': [0.373, 0.22, 0.154, 0.101, 0.071, 0.051, 0.03]}
+{'hipotesis': 'train+test', 'f1_lama': 0.5901, 'f1_sementara': 0.5511, 'galat_total': 0.0688, 'rerata_proba': [0.374, 0.222, 0.154, 0.1, 0.07, 0.051, 0.03]}
+{'hipotesis': 'tanpa_riwayat', 'f1_lama': 0.5035, 'f1_sementara': 0.5118, 'galat_total': 0.1162, 'rerata_proba': [0.373, 0.22, 0.154, 0.101, 0.071, 0.051, 0.03]}
+{'hipotesis': 'dalam_test', 'f1_lama': 0.532, 'f1_sementara': 0.6249, 'galat_total': 0.2008, 'rerata_proba': [0.374, 0.215, 0.154, 0.103, 0.072, 0.051, 0.03]}
+selesai (11.8 menit)

@@ -1,0 +1,148 @@
+[   0.1m] siap: 235 fitur (150 baris, 53 riwayat, 32 encoding) | tanpa riwayat 0.1142 | test (362245, 235)
+[   0.1m] fold 0: matriks latih (994893, 235), validasi (248724, 235), model: ['lgbm', 'xgb', 'cat', 'glm']
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+[200]	valid_0's multi_logloss: 0.778798
+[400]	valid_0's multi_logloss: 0.77296
+[600]	valid_0's multi_logloss: 0.772292
+[  10.1m] fold 0 lgbm: iter=588 logloss validasi=0.75008 | meniru test=0.77228 | 10.0 menit
+[0]	val-mlogloss:1.60711
+[200]	val-mlogloss:0.78562
+[400]	val-mlogloss:0.77413
+[600]	val-mlogloss:0.77173
+[800]	val-mlogloss:0.77099
+[972]	val-mlogloss:0.77093
+[  14.2m] fold 0 xgb: iter=903 logloss validasi=0.74884 | meniru test=0.77089 | 4.0 menit
+0:	learn: 1.8254804	test: 1.8250671	best: 1.8250671 (0)	total: 103ms	remaining: 6m 52s
+200:	learn: 0.8137069	test: 0.8142889	best: 0.8142889 (200)	total: 12.3s	remaining: 3m 52s
+400:	learn: 0.7806519	test: 0.7850400	best: 0.7850400 (400)	total: 23.8s	remaining: 3m 33s
+600:	learn: 0.7673696	test: 0.7765898	best: 0.7765898 (600)	total: 35.4s	remaining: 3m 20s
+800:	learn: 0.7585607	test: 0.7728810	best: 0.7728810 (800)	total: 47.1s	remaining: 3m 8s
+1000:	learn: 0.7514440	test: 0.7710588	best: 0.7710588 (1000)	total: 58.7s	remaining: 2m 55s
+1200:	learn: 0.7449866	test: 0.7700469	best: 0.7700469 (1200)	total: 1m 10s	remaining: 2m 44s
+1400:	learn: 0.7391303	test: 0.7694804	best: 0.7694804 (1400)	total: 1m 22s	remaining: 2m 32s
+1600:	learn: 0.7336261	test: 0.7691082	best: 0.7691082 (1600)	total: 1m 33s	remaining: 2m 20s
+1800:	learn: 0.7286529	test: 0.7689210	best: 0.7689128 (1795)	total: 1m 45s	remaining: 2m 8s
+bestTest = 0.768904677
+bestIteration = 1814
+Shrink model to first 1815 iterations.
+[  16.1m] fold 0 cat: iter=1815 logloss validasi=0.74704 | meniru test=0.76891 | 1.9 menit
+[  16.5m] fold 0 glm: iter=45 logloss validasi=0.76794 | meniru test=0.79093 | 0.4 menit
+[  16.6m] fold 1: matriks latih (994893, 235), validasi (248724, 235), model: ['lgbm', 'xgb', 'cat', 'glm']
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+[200]	valid_0's multi_logloss: 0.782855
+[400]	valid_0's multi_logloss: 0.777154
+[600]	valid_0's multi_logloss: 0.77663
+[  26.5m] fold 1 lgbm: iter=579 logloss validasi=0.75498 | meniru test=0.77659 | 9.9 menit
+[0]	val-mlogloss:1.60579
+[200]	val-mlogloss:0.78918
+[400]	val-mlogloss:0.77827
+[600]	val-mlogloss:0.77603
+[800]	val-mlogloss:0.77545
+[943]	val-mlogloss:0.77542
+[  30.4m] fold 1 xgb: iter=874 logloss validasi=0.75377 | meniru test=0.77539 | 3.9 menit
+0:	learn: 1.8253484	test: 1.8252722	best: 1.8252722 (0)	total: 76.1ms	remaining: 5m 4s
+200:	learn: 0.8130203	test: 0.8176768	best: 0.8176768 (200)	total: 12.3s	remaining: 3m 52s
+400:	learn: 0.7795779	test: 0.7890533	best: 0.7890533 (400)	total: 23.9s	remaining: 3m 34s
+600:	learn: 0.7665247	test: 0.7811317	best: 0.7811317 (600)	total: 35.5s	remaining: 3m 20s
+800:	learn: 0.7575357	test: 0.7776393	best: 0.7776393 (800)	total: 47.1s	remaining: 3m 8s
+1000:	learn: 0.7503194	test: 0.7758810	best: 0.7758810 (1000)	total: 58.9s	remaining: 2m 56s
+1200:	learn: 0.7438781	test: 0.7749024	best: 0.7749024 (1200)	total: 1m 10s	remaining: 2m 44s
+1400:	learn: 0.7380789	test: 0.7743531	best: 0.7743531 (1400)	total: 1m 22s	remaining: 2m 32s
+1600:	learn: 0.7324845	test: 0.7740085	best: 0.7740053 (1596)	total: 1m 33s	remaining: 2m 20s
+1800:	learn: 0.7272656	test: 0.7737600	best: 0.7737563 (1794)	total: 1m 44s	remaining: 2m 8s
+2000:	learn: 0.7225213	test: 0.7737308	best: 0.7737093 (1934)	total: 1m 56s	remaining: 1m 55s
+bestTest = 0.7737093249
+bestIteration = 1934
+Shrink model to first 1935 iterations.
+[  32.5m] fold 1 cat: iter=1935 logloss validasi=0.75215 | meniru test=0.77371 | 2.0 menit
+[  32.9m] fold 1 glm: iter=47 logloss validasi=0.77263 | meniru test=0.79514 | 0.4 menit
+[  33.0m] fold 2: matriks latih (994894, 235), validasi (248723, 235), model: ['lgbm', 'xgb', 'cat', 'glm']
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+[200]	valid_0's multi_logloss: 0.777233
+[400]	valid_0's multi_logloss: 0.77155
+[600]	valid_0's multi_logloss: 0.770962
+[  43.2m] fold 2 lgbm: iter=611 logloss validasi=0.74914 | meniru test=0.77094 | 10.3 menit
+[0]	val-mlogloss:1.60669
+[200]	val-mlogloss:0.78426
+[400]	val-mlogloss:0.77291
+[600]	val-mlogloss:0.77048
+[800]	val-mlogloss:0.76982
+[974]	val-mlogloss:0.76978
+[  47.3m] fold 2 xgb: iter=905 logloss validasi=0.74795 | meniru test=0.76972 | 4.1 menit
+0:	learn: 1.8259697	test: 1.8252526	best: 1.8252526 (0)	total: 74.7ms	remaining: 4m 58s
+200:	learn: 0.8146879	test: 0.8134737	best: 0.8134737 (200)	total: 12.2s	remaining: 3m 51s
+400:	learn: 0.7812197	test: 0.7840873	best: 0.7840873 (400)	total: 23.8s	remaining: 3m 33s
+600:	learn: 0.7680777	test: 0.7757698	best: 0.7757698 (600)	total: 35.3s	remaining: 3m 19s
+800:	learn: 0.7591710	test: 0.7720296	best: 0.7720296 (800)	total: 47s	remaining: 3m 7s
+1000:	learn: 0.7519263	test: 0.7702082	best: 0.7702082 (1000)	total: 58.8s	remaining: 2m 56s
+1200:	learn: 0.7455753	test: 0.7692878	best: 0.7692857 (1199)	total: 1m 10s	remaining: 2m 44s
+1400:	learn: 0.7396034	test: 0.7687202	best: 0.7687202 (1400)	total: 1m 22s	remaining: 2m 32s
+1600:	learn: 0.7342648	test: 0.7683810	best: 0.7683794 (1596)	total: 1m 33s	remaining: 2m 19s
+1800:	learn: 0.7294504	test: 0.7682252	best: 0.7682252 (1800)	total: 1m 44s	remaining: 2m 7s
+2000:	learn: 0.7247454	test: 0.7680640	best: 0.7680539 (1981)	total: 1m 55s	remaining: 1m 55s
+bestTest = 0.7680539069
+bestIteration = 1981
+Shrink model to first 1982 iterations.
+[  49.3m] fold 2 cat: iter=1982 logloss validasi=0.74619 | meniru test=0.76805 | 2.1 menit
+[  49.8m] fold 2 glm: iter=42 logloss validasi=0.76734 | meniru test=0.79022 | 0.4 menit
+[  49.8m] fold 3: matriks latih (994894, 235), validasi (248723, 235), model: ['lgbm', 'xgb', 'cat', 'glm']
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+[200]	valid_0's multi_logloss: 0.781578
+[400]	valid_0's multi_logloss: 0.776117
+[600]	valid_0's multi_logloss: 0.775614
+[  60.1m] fold 3 lgbm: iter=607 logloss validasi=0.75316 | meniru test=0.77561 | 10.2 menit
+[0]	val-mlogloss:1.60607
+[200]	val-mlogloss:0.78809
+[400]	val-mlogloss:0.77701
+[600]	val-mlogloss:0.77482
+[800]	val-mlogloss:0.77422
+[1000]	val-mlogloss:0.77418
+[1022]	val-mlogloss:0.77421
+[  64.3m] fold 3 xgb: iter=953 logloss validasi=0.75191 | meniru test=0.77416 | 4.3 menit
+0:	learn: 1.8252413	test: 1.8251585	best: 1.8251585 (0)	total: 74.6ms	remaining: 4m 58s
+200:	learn: 0.8133248	test: 0.8167279	best: 0.8167279 (200)	total: 12.2s	remaining: 3m 51s
+400:	learn: 0.7797307	test: 0.7881761	best: 0.7881761 (400)	total: 23.8s	remaining: 3m 33s
+600:	learn: 0.7665824	test: 0.7801322	best: 0.7801322 (600)	total: 35.4s	remaining: 3m 20s
+800:	learn: 0.7576251	test: 0.7765979	best: 0.7765979 (800)	total: 47.2s	remaining: 3m 8s
+1000:	learn: 0.7503165	test: 0.7748962	best: 0.7748962 (1000)	total: 59s	remaining: 2m 56s
+1200:	learn: 0.7443118	test: 0.7740281	best: 0.7740281 (1200)	total: 1m 10s	remaining: 2m 44s
+1400:	learn: 0.7385554	test: 0.7735505	best: 0.7735477 (1394)	total: 1m 22s	remaining: 2m 32s
+1600:	learn: 0.7334707	test: 0.7733366	best: 0.7733333 (1599)	total: 1m 33s	remaining: 2m 20s
+1800:	learn: 0.7288881	test: 0.7731296	best: 0.7731278 (1799)	total: 1m 44s	remaining: 2m 7s
+2000:	learn: 0.7244165	test: 0.7730821	best: 0.7730697 (1988)	total: 1m 55s	remaining: 1m 55s
+2200:	learn: 0.7200214	test: 0.7729733	best: 0.7729612 (2182)	total: 2m 6s	remaining: 1m 43s
+bestTest = 0.7729611606
+bestIteration = 2182
+Shrink model to first 2183 iterations.
+[  66.6m] fold 3 cat: iter=2183 logloss validasi=0.75062 | meniru test=0.77296 | 2.2 menit
+[  67.0m] fold 3 glm: iter=39 logloss validasi=0.77147 | meniru test=0.79458 | 0.4 menit
+[  67.1m] fold 4: matriks latih (994894, 235), validasi (248723, 235), model: ['lgbm', 'xgb', 'cat', 'glm']
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+[200]	valid_0's multi_logloss: 0.779299
+[400]	valid_0's multi_logloss: 0.773704
+[600]	valid_0's multi_logloss: 0.773214
+[  78.0m] fold 4 lgbm: iter=665 logloss validasi=0.75192 | meniru test=0.77320 | 10.9 menit
+[0]	val-mlogloss:1.60590
+[200]	val-mlogloss:0.78596
+[400]	val-mlogloss:0.77504
+[600]	val-mlogloss:0.77292
+[800]	val-mlogloss:0.77233
+[932]	val-mlogloss:0.77233
+[  81.9m] fold 4 xgb: iter=863 logloss validasi=0.75092 | meniru test=0.77230 | 3.9 menit
+0:	learn: 1.8257804	test: 1.8251967	best: 1.8251967 (0)	total: 76.7ms	remaining: 5m 6s
+200:	learn: 0.8144691	test: 0.8145830	best: 0.8145830 (200)	total: 12.3s	remaining: 3m 52s
+400:	learn: 0.7806925	test: 0.7856960	best: 0.7856960 (400)	total: 23.9s	remaining: 3m 34s
+600:	learn: 0.7673497	test: 0.7775387	best: 0.7775387 (600)	total: 35.6s	remaining: 3m 21s
+800:	learn: 0.7585030	test: 0.7740811	best: 0.7740811 (800)	total: 47.3s	remaining: 3m 8s
+1000:	learn: 0.7513738	test: 0.7724062	best: 0.7724062 (1000)	total: 58.9s	remaining: 2m 56s
+1200:	learn: 0.7448108	test: 0.7714723	best: 0.7714723 (1200)	total: 1m 10s	remaining: 2m 44s
+1400:	learn: 0.7388558	test: 0.7710203	best: 0.7710203 (1400)	total: 1m 22s	remaining: 2m 32s
+1600:	learn: 0.7332727	test: 0.7707447	best: 0.7707420 (1599)	total: 1m 33s	remaining: 2m 20s
+1800:	learn: 0.7278208	test: 0.7705956	best: 0.7705928 (1799)	total: 1m 45s	remaining: 2m 8s
+2000:	learn: 0.7224968	test: 0.7704610	best: 0.7704491 (1984)	total: 1m 56s	remaining: 1m 56s
+bestTest = 0.7704490789
+bestIteration = 1984
+Shrink model to first 1985 iterations.
+[  84.0m] fold 4 cat: iter=1985 logloss validasi=0.74924 | meniru test=0.77045 | 2.1 menit
+[  84.3m] fold 4 glm: iter=34 logloss validasi=0.77200 | meniru test=0.79410 | 0.3 menit
+[  84.3m] training selesai

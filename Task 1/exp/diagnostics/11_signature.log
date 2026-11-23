@@ -1,0 +1,13 @@
+  sig train: (1243617, 159) (14s)
+  sig test: (362245, 159) (18s)
+(1243617, 159) (362245, 159)
+[]
+fitur sidik jari: 158
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+acuan {"iters": 179, "logloss": 0.78489, "f1_argmax": 0.6165, "f1_crossfit": 0.62327, "f1_mirip_test": 0.6208, "per_kelas": {"normal": 0.82, "konfir": 0.679, "tertun": 0.779, "gagal_": 0.488, "retur_": 0.504, "rusak_": 0.57, "klaim_": 0.507}, "menit": 3.9}
+   teratas: [('address_quality', np.float64(9.9)), ('addr_x_complaint', np.float64(8.5)), ('te_cr_tertun', np.float64(6.9)), ('te_cr_normal', np.float64(5.8)), ('complaint_index', np.float64(5.0)), ('cr_sc_lgap_mean', np.float64(4.1)), ('cr_sc_q_mean', np.float64(4.0)), ('credit_score', np.float64(3.9)), ('cs_loo_sc_n_upaya_antar', np.float64(3.8)), ('cr_rt_lratio_mean', np.float64(2.5)), ('te_cr_gagal_', np.float64(2.2)), ('addr_x_notes', np.float64(1.8)), ('te_hb_klaim_', np.float64(1.7)), ('hist_sc_n_upaya_antar', np.float64(1.5))]
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN
+acuan+scan (101) {"iters": 203, "logloss": 0.78532, "f1_argmax": 0.61559, "f1_crossfit": 0.62171, "f1_mirip_test": 0.61914, "per_kelas": {"normal": 0.82, "konfir": 0.673, "tertun": 0.776, "gagal_": 0.492, "retur_": 0.507, "rusak_": 0.56, "klaim_": 0.506}, "menit": 5.2}
+   teratas: [('addr_x_complaint', np.float64(11.2)), ('address_quality', np.float64(10.7)), ('te_cr_tertun', np.float64(6.3)), ('te_cr_normal', np.float64(6.0)), ('cr_sc_q_mean', np.float64(4.1)), ('credit_score', np.float64(4.0)), ('cr_sc_lgap_mean', np.float64(3.9)), ('cs_loo_sc_n_upaya_antar', np.float64(3.0)), ('te_cr_gagal_', np.float64(2.4)), ('cr_rt_lratio_mean', np.float64(2.4)), ('complaint_index', np.float64(2.3)), ('cs_mean_inv_dtp15_n', np.float64(2.0)), ('hist_sc_n_upaya_antar', np.float64(1.8)), ('declared_value', np.float64(1.7))]

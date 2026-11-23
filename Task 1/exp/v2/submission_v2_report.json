@@ -1,0 +1,67 @@
+{
+  "models": [
+    "cat",
+    "glm",
+    "lgbm",
+    "xgb"
+  ],
+  "bobot": {
+    "cat": 0.5453,
+    "glm": 0.002,
+    "lgbm": 0.1878,
+    "xgb": 0.2649
+  },
+  "logloss_validasi": 0.74696,
+  "logloss_meniru_test": 0.7688,
+  "macro_f1_crossfit_meniru_test": 0.63424,
+  "f1_per_fold": [
+    0.63588,
+    0.6332,
+    0.63472,
+    0.63243,
+    0.63488
+  ],
+  "f1_per_kelas": {
+    "normal": 0.8234,
+    "konfirmasi_alamat": 0.7078,
+    "tertunda_operasional": 0.7776,
+    "gagal_antar_awal": 0.5085,
+    "retur_pengirim": 0.5236,
+    "rusak_perjalanan": 0.5755,
+    "klaim_hilang": 0.5233
+  },
+  "pengali": {
+    "normal": 1.0,
+    "konfirmasi_alamat": 1.06,
+    "tertunda_operasional": 1.04,
+    "gagal_antar_awal": 1.72,
+    "retur_pengirim": 1.7,
+    "rusak_perjalanan": 1.66,
+    "klaim_hilang": 1.98
+  },
+  "cek_lb": {
+    "submission.csv": {
+      "simulasi": 0.5949,
+      "nyata": 0.59364,
+      "selisih": 0.0013,
+      "cocok_dgn_kandidat": 0.8692
+    },
+    "exp/submissions/sub_interim_lgbm.csv": {
+      "simulasi": 0.477,
+      "nyata": 0.48574,
+      "selisih": -0.0088,
+      "cocok_dgn_kandidat": 0.7107
+    }
+  },
+  "sebaran_prediksi": {
+    "normal": 0.3828,
+    "konfirmasi_alamat": 0.2102,
+    "tertunda_operasional": 0.1492,
+    "gagal_antar_awal": 0.1091,
+    "retur_pengirim": 0.0695,
+    "rusak_perjalanan": 0.0505,
+    "klaim_hilang": 0.0286
+  },
+  "berkas": "E:\\Kuliyah\\Datavidia\\Task 1\\exp\\submissions\\submission_v2.csv",
+  "menit": 1.4
+}
