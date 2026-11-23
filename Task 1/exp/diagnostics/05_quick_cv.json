@@ -1,0 +1,36 @@
+{
+  "baris": {
+    "iters": 183,
+    "logloss": 0.85162,
+    "f1_argmax": 0.57006,
+    "f1_crossfit": 0.57945,
+    "f1_mirip_test": 0.59183,
+    "per_kelas": {
+      "normal": 0.811,
+      "konfir": 0.662,
+      "tertun": 0.74,
+      "gagal_": 0.48,
+      "retur_": 0.411,
+      "rusak_": 0.485,
+      "klaim_": 0.466
+    },
+    "menit": 2.2
+  },
+  "baris+pelanggan": {
+    "iters": 189,
+    "logloss": 0.78703,
+    "f1_argmax": 0.61489,
+    "f1_crossfit": 0.62241,
+    "f1_mirip_test": 0.61931,
+    "per_kelas": {
+      "normal": 0.821,
+      "konfir": 0.691,
+      "tertun": 0.775,
+      "gagal_": 0.502,
+      "retur_": 0.476,
+      "rusak_": 0.577,
+      "klaim_": 0.515
+    },
+    "menit": 3.3
+  }
+}

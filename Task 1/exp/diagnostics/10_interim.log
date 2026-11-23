@@ -1,0 +1,42 @@
+matriks latih (995026, 470), validasi (248591, 470), test (362245, 470) (12s)
+[100]	valid_0's multi_logloss: 0.797906
+[200]	valid_0's multi_logloss: 0.782675
+[300]	valid_0's multi_logloss: 0.780046
+[400]	valid_0's multi_logloss: 0.77937
+[500]	valid_0's multi_logloss: 0.779301
+{
+  "iters": 451,
+  "logloss": 0.77925,
+  "f1_argmax": 0.61984,
+  "f1_crossfit": 0.62641,
+  "f1_mirip_test": 0.62394,
+  "f1_kelas_mirip_test": {
+    "normal": 0.8217,
+    "konfirmasi_alamat": 0.6799,
+    "tertunda_operasional": 0.7766,
+    "gagal_antar_awal": 0.4869,
+    "retur_pengirim": 0.5124,
+    "rusak_perjalanan": 0.5728,
+    "klaim_hilang": 0.5171
+  },
+  "pengali": {
+    "normal": 1.0,
+    "konfirmasi_alamat": 1.0,
+    "tertunda_operasional": 0.75,
+    "gagal_antar_awal": 1.2,
+    "retur_pengirim": 1.45,
+    "rusak_perjalanan": 1.45,
+    "klaim_hilang": 1.25
+  },
+  "sebaran_prediksi_test": {
+    "normal": 0.402,
+    "konfirmasi_alamat": 0.2127,
+    "tertunda_operasional": 0.1439,
+    "gagal_antar_awal": 0.0933,
+    "retur_pengirim": 0.0711,
+    "rusak_perjalanan": 0.0514,
+    "klaim_hilang": 0.0256
+  },
+  "menit": 13.0
+}
+berkas: E:\Kuliyah\Datavidia\Task 1\exp\submissions\sub_interim_lgbm.csv
