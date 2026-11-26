@@ -1,0 +1,26 @@
+Task 1/datasets/
+Task 1/models/
+Task 1/exp/cache/
+Task 1/exp/models/
+Task 1/exp/preds/
+
+# Cache fitur dan berkas sementara (dibangun ulang otomatis oleh notebook)
+Task 1/feature_cache/
+Task 1/exp/tmp/
+Task 1/exp/**/cache/
+
+# Model, prediksi, dan array hasil eksperimen (besar; paket final ada di Task 1/models/)
+Task 1/exp/**/models/
+Task 1/exp/**/preds/
+Task 1/exp/**/*.npy
+Task 1/exp/**/*.npz
+Task 1/exp/v3_smoke/
+
+# Task 2: dataset, virtualenv, unduhan model (HF/torch) dan cache gambar/embedding (besar, dibangun ulang)
+Task 2/Datasets/
+Task 2/.venv/
+Task 2/.cache/
+Task 2/exp/cache/
+# Task 2: gambar EDA hasil generate (dibuat ulang oleh skrip) dan bobot eksperimen yang tidak dipakai
+Task 2/exp/viz/
+Task 2/exp/**/*.pt

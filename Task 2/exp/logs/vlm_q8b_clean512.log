@@ -1,0 +1,36 @@
+W1126 16:10:56.640000 34420 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+W1126 16:10:57.852000 34420 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+0 3180 3s {'Eart': np.float32(0.0), 'Fire': np.float32(0.04), 'Hurr': np.float32(0.0), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.64), 'Expl': np.float32(0.0)} dmg=0.94
+100 3180 223s {'Eart': np.float32(0.01), 'Fire': np.float32(0.29), 'Hurr': np.float32(0.27), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.0), 'Expl': np.float32(0.0)} dmg=0.78
+200 3180 443s {'Eart': np.float32(0.0), 'Fire': np.float32(0.37), 'Hurr': np.float32(0.01), 'Tsun': np.float32(0.03), 'Volc': np.float32(0.05), 'Expl': np.float32(0.0)} dmg=0.92
+300 3180 663s {'Eart': np.float32(0.03), 'Fire': np.float32(0.37), 'Hurr': np.float32(0.21), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.0), 'Expl': np.float32(0.0)} dmg=0.22
+400 3180 884s {'Eart': np.float32(0.0), 'Fire': np.float32(0.06), 'Hurr': np.float32(0.0), 'Tsun': np.float32(0.03), 'Volc': np.float32(0.78), 'Expl': np.float32(0.0)} dmg=0.95
+500 3180 1105s {'Eart': np.float32(0.0), 'Fire': np.float32(0.22), 'Hurr': np.float32(0.0), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.29), 'Expl': np.float32(0.0)} dmg=0.18
+600 3180 1326s {'Eart': np.float32(0.11), 'Fire': np.float32(0.03), 'Hurr': np.float32(0.06), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.0), 'Expl': np.float32(0.0)} dmg=0.98
+700 3180 1547s {'Eart': np.float32(0.06), 'Fire': np.float32(0.28), 'Hurr': np.float32(0.22), 'Tsun': np.float32(0.01), 'Volc': np.float32(0.0), 'Expl': np.float32(0.01)} dmg=0.03
+800 3180 1770s {'Eart': np.float32(0.01), 'Fire': np.float32(0.79), 'Hurr': np.float32(0.03), 'Tsun': np.float32(0.01), 'Volc': np.float32(0.0), 'Expl': np.float32(0.0)} dmg=0.73
+900 3180 1991s {'Eart': np.float32(0.0), 'Fire': np.float32(0.05), 'Hurr': np.float32(0.02), 'Tsun': np.float32(0.06), 'Volc': np.float32(0.4), 'Expl': np.float32(0.0)} dmg=0.27
+1000 3180 2212s {'Eart': np.float32(0.01), 'Fire': np.float32(0.54), 'Hurr': np.float32(0.02), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.01), 'Expl': np.float32(0.0)} dmg=0.95
+1100 3180 2433s {'Eart': np.float32(0.0), 'Fire': np.float32(1.0), 'Hurr': np.float32(0.0), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.0), 'Expl': np.float32(0.0)} dmg=0.06
+1200 3180 2654s {'Eart': np.float32(0.0), 'Fire': np.float32(0.02), 'Hurr': np.float32(0.93), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.0), 'Expl': np.float32(0.0)} dmg=0.02
+1300 3180 2875s {'Eart': np.float32(0.01), 'Fire': np.float32(0.95), 'Hurr': np.float32(0.0), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.0), 'Expl': np.float32(0.0)} dmg=0.90
+1400 3180 3096s {'Eart': np.float32(0.01), 'Fire': np.float32(0.02), 'Hurr': np.float32(0.0), 'Tsun': np.float32(0.14), 'Volc': np.float32(0.64), 'Expl': np.float32(0.0)} dmg=0.85
+1500 3180 3316s {'Eart': np.float32(0.08), 'Fire': np.float32(0.06), 'Hurr': np.float32(0.42), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.0), 'Expl': np.float32(0.0)} dmg=0.06
+1600 3180 3537s {'Eart': np.float32(0.24), 'Fire': np.float32(0.16), 'Hurr': np.float32(0.02), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.0), 'Expl': np.float32(0.0)} dmg=0.22
+1700 3180 3758s {'Eart': np.float32(0.27), 'Fire': np.float32(0.02), 'Hurr': np.float32(0.09), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.0), 'Expl': np.float32(0.08)} dmg=0.12
+1800 3180 3979s {'Eart': np.float32(0.0), 'Fire': np.float32(0.0), 'Hurr': np.float32(0.0), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.99), 'Expl': np.float32(0.0)} dmg=0.90
+1900 3180 4200s {'Eart': np.float32(0.0), 'Fire': np.float32(0.15), 'Hurr': np.float32(0.0), 'Tsun': np.float32(0.05), 'Volc': np.float32(0.2), 'Expl': np.float32(0.0)} dmg=0.50
+2000 3180 4421s {'Eart': np.float32(0.0), 'Fire': np.float32(1.0), 'Hurr': np.float32(0.0), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.0), 'Expl': np.float32(0.0)} dmg=0.03
+2100 3180 4642s {'Eart': np.float32(0.0), 'Fire': np.float32(0.0), 'Hurr': np.float32(0.32), 'Tsun': np.float32(0.13), 'Volc': np.float32(0.0), 'Expl': np.float32(0.0)} dmg=0.08
+2200 3180 4863s {'Eart': np.float32(0.69), 'Fire': np.float32(0.02), 'Hurr': np.float32(0.01), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.0), 'Expl': np.float32(0.0)} dmg=0.44
+2300 3180 5085s {'Eart': np.float32(0.01), 'Fire': np.float32(0.65), 'Hurr': np.float32(0.01), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.03), 'Expl': np.float32(0.0)} dmg=0.62
+2400 3180 5307s {'Eart': np.float32(0.0), 'Fire': np.float32(0.0), 'Hurr': np.float32(0.0), 'Tsun': np.float32(0.98), 'Volc': np.float32(0.0), 'Expl': np.float32(0.0)} dmg=1.00
+2500 3180 5531s {'Eart': np.float32(0.0), 'Fire': np.float32(0.0), 'Hurr': np.float32(0.82), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.0), 'Expl': np.float32(0.0)} dmg=0.85
+2600 3180 5752s {'Eart': np.float32(0.13), 'Fire': np.float32(0.05), 'Hurr': np.float32(0.0), 'Tsun': np.float32(0.01), 'Volc': np.float32(0.0), 'Expl': np.float32(0.12)} dmg=0.32
+2700 3180 5973s {'Eart': np.float32(0.03), 'Fire': np.float32(0.08), 'Hurr': np.float32(0.53), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.0), 'Expl': np.float32(0.0)} dmg=0.56
+2800 3180 6194s {'Eart': np.float32(0.08), 'Fire': np.float32(0.34), 'Hurr': np.float32(0.07), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.0), 'Expl': np.float32(0.0)} dmg=0.38
+2900 3180 6415s {'Eart': np.float32(0.0), 'Fire': np.float32(0.04), 'Hurr': np.float32(0.0), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.55), 'Expl': np.float32(0.0)} dmg=0.32
+3000 3180 6634s {'Eart': np.float32(0.0), 'Fire': np.float32(0.82), 'Hurr': np.float32(0.01), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.01), 'Expl': np.float32(0.0)} dmg=0.68
+3100 3180 6853s {'Eart': np.float32(0.0), 'Fire': np.float32(0.12), 'Hurr': np.float32(0.0), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.34), 'Expl': np.float32(0.0)} dmg=0.27
+3179 3180 7026s {'Eart': np.float32(0.0), 'Fire': np.float32(0.91), 'Hurr': np.float32(0.0), 'Tsun': np.float32(0.0), 'Volc': np.float32(0.0), 'Expl': np.float32(0.0)} dmg=0.73
+done 7026s
