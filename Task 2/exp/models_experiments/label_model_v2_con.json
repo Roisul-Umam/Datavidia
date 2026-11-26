@@ -1,0 +1,10 @@
+{
+  "tag": "v2_con",
+  "mcq_mode": "contentfree_blur",
+  "w_mcq": 0.0,
+  "w_con": 1.0,
+  "alpha": 0.9,
+  "k": 15,
+  "eq": 0.22,
+  "target": ""
+}

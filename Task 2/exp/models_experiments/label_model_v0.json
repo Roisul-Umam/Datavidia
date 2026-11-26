@@ -1,0 +1,22 @@
+{
+  "signals": {
+    "vlm_q8b_clean512": 1.0,
+    "clip_rgbn": 0.35,
+    "clip_gray": 0.35
+  },
+  "event": "",
+  "wevent": 1.0,
+  "k": 15,
+  "alpha": 0.97,
+  "T": 0.05,
+  "eq": 0.22,
+  "prior": "data",
+  "classes": [
+    "Earthquake",
+    "Fire",
+    "Hurricane",
+    "Tsunami",
+    "Volcano",
+    "Explosion"
+  ]
+}

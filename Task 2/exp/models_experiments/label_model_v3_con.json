@@ -1,0 +1,109 @@
+{
+  "tag": "v3_con",
+  "w_mcq": 0.0,
+  "w_con": 1.0,
+  "alpha": 0.9,
+  "k": 15,
+  "eq": 0.22,
+  "target": "",
+  "rules": {
+    "Earthquake": {
+      "collapse": 1.0,
+      "city": 0.5,
+      "snow": 0.3,
+      "usa": -0.5,
+      "flood": -0.4,
+      "inlandflood": -0.3,
+      "burn": -0.4,
+      "lavaflow": -0.4,
+      "washed": -0.3,
+      "vegetation": -0.3
+    },
+    "Fire": {
+      "burn": 0.7,
+      "burnscar": 0.7,
+      "flood": -0.4,
+      "inlandflood": -0.4,
+      "tropical": -0.3,
+      "washed": -0.3,
+      "collapse": -0.3,
+      "snow": -0.3
+    },
+    "Hurricane": {
+      "flood": 0.4,
+      "inlandflood": 0.4,
+      "treesdown": 0.6,
+      "roofs": 0.6,
+      "usa": 0.5,
+      "burn": -0.4,
+      "burnscar": -0.3,
+      "lavaflow": -0.3,
+      "city": -0.3,
+      "snow": -0.3
+    },
+    "Tsunami": {
+      "washed": 1.0,
+      "coastpre": 1.0,
+      "flood": 0.3,
+      "usa": -0.7,
+      "burn": -0.4,
+      "burnscar": -0.3,
+      "lavaflow": -0.3,
+      "snow": -0.3
+    },
+    "Volcano": {
+      "lavaflow": 1.0,
+      "lava": 0.5,
+      "tropical": 0.2,
+      "flood": -0.4,
+      "inlandflood": -0.4,
+      "city": -0.3,
+      "roofs": -0.3,
+      "snow": -0.2
+    },
+    "Explosion": {
+      "blast": 1.0,
+      "collapse": 0.3,
+      "city": 0.3,
+      "usa": -0.5,
+      "vegetation": -0.5,
+      "flood": -0.4,
+      "burn": -0.3,
+      "snow": -0.3
+    }
+  },
+  "damage": [
+    "flood",
+    "burn",
+    "lava",
+    "collapse",
+    "treesdown",
+    "roofs",
+    "washed",
+    "blast",
+    "inlandflood",
+    "lavaflow",
+    "burnscar"
+  ],
+  "concept_names": [
+    "flood",
+    "burn",
+    "lava",
+    "collapse",
+    "treesdown",
+    "roofs",
+    "coast",
+    "washed",
+    "city",
+    "blast",
+    "vegetation",
+    "nodamage",
+    "coastpre",
+    "inlandflood",
+    "usa",
+    "tropical",
+    "snow",
+    "lavaflow",
+    "burnscar"
+  ]
+}

@@ -1,0 +1,7 @@
+W1126 19:33:18.521000 32628 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+W1126 19:33:19.369000 32628 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+0 62 17s {'Eart': np.float64(0.02), 'Fire': np.float64(0.21), 'Hurr': np.float64(0.03), 'Tsun': np.float64(0.05), 'Volc': np.float64(0.02), 'Expl': np.float64(0.0)}
+1 47 33s {'Eart': np.float64(0.36), 'Fire': np.float64(0.01), 'Hurr': np.float64(0.01), 'Tsun': np.float64(0.0), 'Volc': np.float64(0.0), 'Expl': np.float64(0.0)}
+2 66 49s {'Eart': np.float64(0.0), 'Fire': np.float64(0.9), 'Hurr': np.float64(0.0), 'Tsun': np.float64(0.0), 'Volc': np.float64(0.01), 'Expl': np.float64(0.0)}
+3 42 65s {'Eart': np.float64(0.0), 'Fire': np.float64(0.75), 'Hurr': np.float64(0.01), 'Tsun': np.float64(0.0), 'Volc': np.float64(0.0), 'Expl': np.float64(0.0)}
+4 54 81s {'Eart': np.float64(0.0), 'Fire': np.float64(0.24), 'Hurr': np.float64(0.0), 'Tsun': np.float64(0.0), 'Volc': np.float64(0.11), 'Expl': np.float64(0.0)}
